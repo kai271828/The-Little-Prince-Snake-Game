@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Computer Graphic Project</title>
+        <style>
+            #current-score {
+              font-size: 24px;
+              color: rgb(37, 84, 96);
+            }
+            
+        </style>
+        <style>
+          #best-score {
+              font-size: 24px;
+              color: rgb(255, 140, 0);
+            }
+        </style>
+    </head>
+
+    <body onload="main()">
+        <p>
+            <span id="current-score">Current Score: 0 </span>
+            <span id="best-score"> Best Score: 0 </span>
+        </p>    
+        
+        <canvas id="webgl" width = "1000" height = "1000">
+            Please use a browser that support "canvas"
+        </canvas>
+        <script src="cuon-matrix.js"></script>
+        <script src="webgl-utils.js"></script>
+        <script src="WebGL.js"></script>
+        <p>使用w, a, s, d來操作狐狸的方向，當狐狸碰到玫瑰即可得分</p>
+        <p>按v切換視角，c開啟作弊模式</p>
+    </body>
+</html>
+
+
